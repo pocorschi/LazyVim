@@ -75,7 +75,7 @@ map("v", "<", "<gv")
 map("v", ">", ">gv")
 
 -- lazy
-map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
+-- map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 -- new file
 map("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
@@ -135,7 +135,7 @@ map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit all" })
 map("n", "<leader>ui", vim.show_pos, { desc = "Inspect Pos" })
 
 -- LazyVim Changelog
-map("n", "<leader>L", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
+-- map("n", "<leader>L", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
 
 -- floating terminal
 local lazyterm = function() Util.terminal(nil, { cwd = Util.root() }) end
@@ -160,11 +160,3 @@ map("n", "<leader>w-", "<C-W>s", { desc = "Split window below", remap = true })
 map("n", "<leader>w|", "<C-W>v", { desc = "Split window right", remap = true })
 map("n", "<leader>-", "<C-W>s", { desc = "Split window below", remap = true })
 map("n", "<leader>|", "<C-W>v", { desc = "Split window right", remap = true })
-
--- tabs
-map("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last Tab" })
-map("n", "<leader><tab>f", "<cmd>tabfirst<cr>", { desc = "First Tab" })
-map("n", "<leader><tab><tab>", "<cmd>tabnew<cr>", { desc = "New Tab" })
-map("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
-map("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
-map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
